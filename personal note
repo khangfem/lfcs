@@ -1,0 +1,13 @@
+find:
+- luôn là path trc r đến parameter
+- -mmin: t là đúng t phút trước đó
+        -t là toàn bộ trong khoảng -t phút
+        +t là toàn bộ trước đó hơn -t phút
+  -mtime tính bằng 24h
+  -ctime để tìm file có change time ( thay đổi về metadata, quyền ... file)
+- -perm : -XXX: có ít nhất các quyền này
+          /XXX: có bất cứ quyền nào trong này
+sed: edit nội dung file 
+- /s: thay thế
+- /g: toàn bộ file (global)
+- -i: áp dụng thực tế vào file
