@@ -1,3 +1,4 @@
+
 find:
 - luôn là path trc r đến parameter
 - -mmin: t là đúng t phút trước đó
@@ -11,3 +12,4 @@ sed: edit nội dung file
 - /s: thay thế
 - /g: toàn bộ file (global)
 - -i: áp dụng thực tế vào file
+cut: lấy nội dung trong file theo yêu cầu
