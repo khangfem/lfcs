@@ -17,3 +17,6 @@ cut: lấy nội dung trong file theo yêu cầu
 
 Openssl:
 - req: dùng để tạo cert request hoặc cert tự kí
+- x509: lấy thông tin về cert request hoặc cert
+
+systemctl: manages systemd units, targets, services, etc.
