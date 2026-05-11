@@ -13,3 +13,7 @@ sed: edit nội dung file
 - /g: toàn bộ file (global)
 - -i: áp dụng thực tế vào file
 cut: lấy nội dung trong file theo yêu cầu
+
+
+Openssl:
+- req: dùng để tạo cert request hoặc cert tự kí
