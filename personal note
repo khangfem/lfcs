@@ -1,4 +1,3 @@
-
 find:
 - luôn là path trc r đến parameter
 - -mmin: t là đúng t phút trước đó
@@ -14,9 +13,32 @@ sed: edit nội dung file
 - -i: áp dụng thực tế vào file
 cut: lấy nội dung trong file theo yêu cầu
 
+grep: 
+--text: tim text trong file
+-r: tim trong toan bo directory
+
+journalctl:
+-p: chon muc do priority
+-g: grep tu log message
+-u: unit service can chon
 
 Openssl:
 - req: dùng để tạo cert request hoặc cert tự kí
 - x509: lấy thông tin về cert request hoặc cert
 
 systemctl: manages systemd units, targets, services, etc.
+
+lsof: kiểm tra các file được mở ( ket hop vs pid de xem duoc mo boi process)
+
+The at utility is a command-line tool used to schedule a one-time job to run at a specific time in the future. Think of it as setting a reminder for your computer to do something just once, at the exact moment you specify. 😊
+Now, for your task: to see scheduled at jobs, the command is:
+atq
+
+dpkg --search /bin/ls: tim package ma file thuoc ve
+
+apt remove: 
+apt --autoremove: Removes packages that were automatically installed to satisfy dependencies for other packages and are now no longer needed. It helps clean up unused dependencies.
+apt --purge: Removes the package along with its configuration files, giving a cleaner uninstall.
+So, autoremove is for cleaning dependencies, while purge is for completely removing a specific package and its configs.
+
+de add repo custom, chinh sua file /etc/apt/source.list va apt update
