@@ -42,3 +42,14 @@ apt --purge: Removes the package along with its configuration files, giving a cl
 So, autoremove is for cleaning dependencies, while purge is for completely removing a specific package and its configs.
 
 de add repo custom, chinh sua file /etc/apt/source.list va apt update
+
+sysctl -a: list kernel runtime parameter
+de chinh parameter persistent: /etc/sysctl.d/*.conf hoac /etc/sysctl.conf 
+sysctl -p path
+
+docker:
+--publish x:y : redirect tu port x OS den port y container
+docker run --detach: chay duoi nen
+--name: dat ten cho container'
+
+virsh: quan ly VM trong linux
