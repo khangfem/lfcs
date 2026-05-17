@@ -53,3 +53,8 @@ docker run --detach: chay duoi nen
 --name: dat ten cho container'
 
 virsh: quan ly VM trong linux
+-define: dinh nghia VM tu XML
+-start: start VM
+-destroy: force shutdown
+-define: remove Vm
+virsh-install: tao may ao tu image hoac iso
