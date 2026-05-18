@@ -14,16 +14,16 @@ các bước thực hiện:
 make
 make install
 7: đồng bộ thời gian với server 1 lần mà không duy trì sync of sys time stuff (maybe look at some other options, not just timesyncd)
-8: chỉnh sửa file và commit lên git với message chỉ định
-9: tạo user, group với các option chỉ định, thêm, đổi group của user (/sbin/nologin), non-interactive login
+8: chỉnh sửa file và commit lên git với message chỉ định, sau do push toi remote repo
+9: tạo user voi password chi dinh với các option chỉ định vi du nhu non-interactive login, thêm, đổi group của user (/sbin/nologin)
 10: chỉnh sửa các option ssh của user chỉ định
 11: tìm hiểu thông tin về SSL cert và move SSL cert vào đúng directory của nó (x509 certs)
 12: disk usage of certain file systems and performing some tasks starting from that output
 13: debugging a service which is refusing to start
-14: chinh sua kernel parameter: ip_forward 
+14: chinh sua kernel parameter vi du nhu ip_forward 
 15: config NFS:
 /svr/backup cho host 1 ghi backup, host 2 chi restore backup
 /svr/tmp cho ca 2 host
 tat ca deu voi insecure option
-16: io usage of processes and kill processes, un mount phan vung chua process do
+16: tim cac processes gay nghen he thong ( co the la io usage, CPU, RAM) and kill processes, sau do un mount phan vung chua process do
 17: limit process number for certain user / manage user resource
