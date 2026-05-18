@@ -58,3 +58,4 @@ virsh: quan ly VM trong linux
 -destroy: force shutdown
 -define: remove Vm
 virsh-install: tao may ao tu image hoac iso
+virt-install --os-info detect=on --name ubuntu1 --memory 2048 --import -disk path.img --graphic none
