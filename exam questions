@@ -2,9 +2,11 @@ TEST question
 
 1: tạo cronjob cho user chỉ định, redirect output ra file chỉ định
 2: extend LV mà không unmount ổ (LVM basic tasks)
-3: libvirt basics such as creating a vm with certain specs
-4: Build docker imgage, chạy docker, edit kết nối của docker
-5: iptables and NAT
+3: libvirt basics such as creating a vm with certain specs: tao tu 1 image co san, dat memory chi dinh, dat ten
+4: Build docker imgage, 
+chạy docker container: detach, anh xa port host sang port container, dat ten nhat dinh cho container, gioi han memory container, 
+edit kết nối của docker
+5: netfilter: NAT tu 1 dai IP co dinh sang port khac voi protocol tcp, allow ket noi den 1 port, block ket noi den 1 port. Cuoi cung lam tat ca permanent voi netfilter 
 6: install package từ đầu với các option
 các bước thực hiện:
 ./autogen.sh
@@ -13,12 +15,15 @@ make
 make install
 7: đồng bộ thời gian với server 1 lần mà không duy trì sync of sys time stuff (maybe look at some other options, not just timesyncd)
 8: chỉnh sửa file và commit lên git với message chỉ định
-9: tạo user, group với các option chỉ định, thêm, đổi group của user (/sbin/nologin)
+9: tạo user, group với các option chỉ định, thêm, đổi group của user (/sbin/nologin), non-interactive login
 10: chỉnh sửa các option ssh của user chỉ định
 11: tìm hiểu thông tin về SSL cert và move SSL cert vào đúng directory của nó (x509 certs)
 12: disk usage of certain file systems and performing some tasks starting from that output
 13: debugging a service which is refusing to start
-14: disk usage of certain file systems and performing some tasks starting from that output
-15: config NFS
-16: io usage of processes and kill processes
+14: chinh sua kernel parameter: ip_forward 
+15: config NFS:
+/svr/backup cho host 1 ghi backup, host 2 chi restore backup
+/svr/tmp cho ca 2 host
+tat ca deu voi insecure option
+16: io usage of processes and kill processes, un mount phan vung chua process do
 17: limit process number for certain user / manage user resource
